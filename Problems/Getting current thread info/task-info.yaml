@@ -1,0 +1,18 @@
+type: code
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    class Info {
+
+        public static void printCurrentThreadInfo() {
+            // get the thread and print its info
+        }
+    }
+  learner_created: false
+- name: META-INF/MANIFEST.MF
+  visible: true
+  learner_created: true
+feedback_link: https://hyperskill.org/learn/step/2521
+status: Failed
+record: -1

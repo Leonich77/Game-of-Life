@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Problems-Getting_current_thread_info:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Problems_Getting_current_thread_info_jar</output-path>
+    <root id="archive" name="Problems-Getting_current_thread_info.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/Problems/Getting current thread info/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="Problems-Getting_current_thread_info_main" />
+    </root>
+  </artifact>
+</component>
