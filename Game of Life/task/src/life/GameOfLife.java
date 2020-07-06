@@ -4,7 +4,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ItemEvent;
 
-
 public class GameOfLife extends JFrame {
     private final JPanel livePanel;
     private char[][] currentGeneration;
