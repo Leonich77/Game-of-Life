@@ -60,7 +60,6 @@ public class GameOfLife extends JFrame {
         resetButton.addActionListener(e -> {
             stopLive();
             btnStart.setEnabled(true);
-            //playToggleButton.setSelected(false);
             currentGeneration = universe.initUniverse();
             if (!playToggleButton.isSelected()) {
                 startLive();
@@ -104,7 +103,6 @@ public class GameOfLife extends JFrame {
                 speed = 1000 / spd;
             }
         });
-        //speedSlider.setBackground(Color.BLUE);
         sliderPanel.add(speedSlider);
 
         commandPanel = new JPanel();
@@ -131,9 +129,7 @@ public class GameOfLife extends JFrame {
         gofPanel.add(livePanel);
         add(gofPanel);
 
-
         setVisible(true);
-
     }
 
     private void startLive() {
@@ -163,7 +159,6 @@ public class GameOfLife extends JFrame {
                 try {
                     Thread.sleep(speed);
                 } catch (InterruptedException interruptedException) {
-                    //interruptedException.printStackTrace();
                     break;
                 }
                 currentGeneration = universe.liveUniverse();
@@ -193,11 +188,9 @@ public class GameOfLife extends JFrame {
                 for (int j = 0; j < sizeLive; j++) {
                     if (currentGeneration[i][j] == 'O'){
                         g.fillOval(j * sizeCellX, i * sizeCellY, sizeCellX, sizeCellY);
-                        //g.fillRect(j * sizeCellX, i * sizeCellY, sizeCellX, sizeCellY);
                     }
                 }
             }
         }
-
     }
 }
